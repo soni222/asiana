@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, 
+    minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    
+    <title>아시아나항공</title>
+</head>
+
+<body>
+    <div id="skipMenu">
+        <a href="#container">본문바로가기</a>
+        <a href="#gnb">주메뉴바로가기</a>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="bg"><img src="images/visual_bg.jpg" width="375" height="264" alt="아시아나배경화면" /></div>
+        <header class="header">
+            <h1><a href="#">
+                    <img src="images/logo.png" width="77" height="15" alt="asiana airlines" /></a></h1>
+            <div class="gnb_left">
+                <span class="mypage"><a href="#"><img src="images/btn_mypage.png" width="15px" height="14px" alt="마이페이지" /></a></span>
+                <span class="toggle"><a href="#"><img src="images/btn_toggle.png" width="15px" height="14px" alt="메뉴바로가기" /></a></span>
+            </div>
+            </header>
+            <nav class="gnb" id="gnb">
+                <div class="gnb_full">
+                <div class="gnb_header">
+                    <button class="lang"><a href="#">대한민국/한국어</a></button><br />
+                    <span>로그인하시고<br />
+                        다양한 서비스를 이용하세요.</span>
+                    <a href="#" class="gnb_close"><img src="images/btn_close.png" alt="메뉴닫기" width="16" height="16"/></a>
+                    <a href="#" class="bng_login">로그인</a>
+                    <div class="search">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <div class="button">
+                        <button class="btn_del"><img src="images/btn_delete.png" alt="검색어삭제" width="12.5" height="12.5"/></button>
+                        <button class="btn_search"><img src="images/btn_search.png" alt="검색하기" width="16" height="16"/></button>
+                            </div>
+                    </div>
+                </div>
+                <div class="gnb_content">
+                    <ul class="gnb_wrap clearfix">
+                        <li class="deth1"><a href="#">예약</a>
+                            <ul class="deth2">
+                                <li><a href="#" class="arrow">항공권 예약</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">항공권예약</a></li>
+                                        <li><a href="#">예약안내</a></li>
+                                        <li><a href="#">최저가 간편조회</a></li>
+                                        <li><a href="#">오즈드림페어</a></li>
+                                        <li><a href="#">신용카드 혜택</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="arrow">예약조회</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">예약내역</a></li>
+                                        <li><a href="#">항공권 구매내역</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">체크인</a></li>
+                                <li><a href="#" class="arrow">운항정보</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">스케줄 조회</a></li>
+                                        <li><a href="#">출도착 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">기업우대</a></li>
+                                <li><a href="#" class="arrow">취항지 정보</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">운항 노선</a></li>
+                                        <li><a href="#">여행 정보</a></li>
+                                        <li><a href="#">캐빈승무원 여행일기</a></li>
+                                        <li><a href="#">아시아도 아시아나!</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="deth1"><a href="#">여행준비</a>
+                            <ul class="deth2">
+                                <li><a href="#" class="arrow">체크인안내</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">사전 체크인</a></li>
+                                        <li><a href="#">공항 체크인</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">사전 좌석 배정</a></li>
+
+                                <li><a href="#" class="arrow">수하물</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">위탁수하물</a></li>
+                                        <li><a href="#">휴대수하물</a></li>
+                                        <li><a href="#">수하물계산기</a></li>
+                                        <li><a href="#">운송제한 물품</a></li>
+                                        <li><a href="#">수하물 보상</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="arrow">도움이 필요한 고객</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">장애인고객</a></li>
+                                        <li><a href="#">고령자 고객</a></li>
+                                        <li><a href="#">임산부 고객</a></li>
+                                        <li><a href="#">유/소아 동반 고객</a></li>
+                                        <li><a href="#">혼자여행하는 어린이/청소년</a></li>
+                                        <li><a href="#">반려동물동반</a></li>
+                                        <li><a href="#">의료도움이 필요한 고객</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">출입국 신고서</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="deth1"><a href="#">여행</a>
+                            <ul class="deth2">
+                                <li><a href="#" class="arrow">공항에서</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">공항안내</a></li>
+                                        <li><a href="#">탑승수속절차</a></li>
+                                        <li><a href="#">라운지이용</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#" class="arrow">기내에서</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">기내서비스순서</a></li>
+                                        <li><a href="#">국제선 기내면세품</a></li>
+                                        <li><a href="#">휴대수하물</a></li>
+                                        <li><a href="#">수하물계산기</a></li>
+                                        <li><a href="#">운송제한 물품</a></li>
+                                        <li><a href="#">수하물 보상</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">항공기 정보</a></li>
+                                <li><a href="#" class="arrow">유료 부가서비스</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">레그룸 좌석</a></li>
+                                        <li><a href="#">국내선 비즈니스 존</a></li>
+                                        <li><a href="#">프론트 존</a></li>
+                                        <li><a href="#">듀오 좌석</a></li>
+                                        <li><a href="#">이코노미 스마티움</a></li>
+                                        <li><a href="#">로얄 비즈니스</a></li>
+                                        <li><a href="#">업그레이드 스탠바이</a></li>
+                                        <li><a href="#">기내 Wi-Fi</a></li>
+                                        <li><a href="#">도움이 필요한 고객</a></li>
+                                        <li><a href="#">수하물 사전 구매</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">매직보딩패스</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="deth1"><a href="#">아시아나클럽</a>
+                            <ul class="deth2">
+                                <li><a href="#" class="arrow">회원제도</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">회원안내</a></li>
+                                        <li><a href="#">가족 마일리지 합산 및 마일리지 양도</a></li>
+                                        <li><a href="#">할인제휴사</a></li>
+                                        <li><a href="#">뉴스레터</a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="arrow">마일리지적립</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">아시아나항공</a></li>
+                                        <li><a href="#">스타얼라이언스/제휴항공사</a></li>
+                                        <li><a href="#">마일리지 적립몰</a></li>
+                                        <li><a href="#">금융(신용카드,환전</a></li>
+                                        <li><a href="#">쇼핑</a></li>
+                                        <li><a href="#">여행(호텔,렌터카,여행자보험)</a></li>
+                                        <li><a href="#">라이프(통신,보험)</a></li>
+                                        <li><a href="#">누락마일리지적립</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="arrow">마일리지사용</a>
+                                    <ul class="gnb_inner">
+                                        <li><a href="#">아시아나항공</a></li>
+                                        <li><a href="#">스타얼라이언스/제휴항공사</a></li>
+                                        <li><a href="#">마일리지사용몰</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">마일리지 적립몰</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="deth1"><a href="#">이벤트</a>
+                            <ul class="deth2">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">종료된 이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="gnb_bottom">
+                        <li class="deth1"><a href="#">공지사항</a></li>
+                        <li class="deth1"><a href="#">챗봇 서비스</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        <div class="container" id="container">
+            <section class="reservation">
+                <ul class="tab_menu">
+                    <li><a href="#" class="on">왕복</a></li>
+                    <li><a href="#">편도</a></li>
+                    <li><a href="#">다구간</a></li>
+                </ul>
+                <ul class="tab_inner round on">
+                    <li>
+                        <ul class="route">
+                            <li>
+                                <strong>출발지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                            <li>
+                                <strong>도착지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                        </ul>
+                        <div class="day">
+                            <strong>YYYY-MM-DD</strong>
+                            <strong>YYYY-MM-DD</strong>
+                        </div>
+                        <ul class="numeric">
+                            <li>
+                                <p>성인</p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>소아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="소아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>유아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="유아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <div class="submit">
+                            <span><a href="#">쿠폰선택</a></span>
+                            <button>항공권 조회</button>
+                        </div>
+                    </li>
+                </ul>
+                        <ul class="tab_inner oneway">
+                    <li>
+                        <ul class="route">
+                            <li>
+                                <strong>출발지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                            <li>
+                                <strong>도착지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                        </ul>
+                        <div class="day">
+                            <strong>YYYY-MM-DD</strong>
+                          
+                        </div>
+                        <ul class="numeric">
+                            <li>
+                                <p>성인</p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>소아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="소아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>유아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="유아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                        <div class="submit">
+                            <span><a href="#">쿠폰선택</a></span>
+                            <button>항공권 조회</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="tab_inner round">
+                    <li>
+                        <ul class="route">
+                            <li>
+                                <strong>출발지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                            <li>
+                                <strong>도착지</strong><br />
+                                <span>도시/공항</span>
+                            </li>
+                        </ul>
+                        <div class="day">
+                            <strong>YYYY-MM-DD</strong>
+                            <strong>YYYY-MM-DD</strong>
+                        </div>
+                        <ul class="numeric">
+                            <li>
+                                <p>성인</p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>소아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="소아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>유아<a href="#"><img src="images/btn_question.png" width="10" height="10" alt="유아나이기준안내" /></a></p>
+                                <select>
+                                    <option value="#">0</option>
+                                    <option value="#">1</option>
+                                    <option value="#">2</option>
+                                    <option value="#">3</option>
+                                    <option value="#">4</option>
+                                    <option value="#">5</option>
+                                    <option value="#">6</option>
+                                    <option value="#">7</option>
+                                    <option value="#">8</option>
+                                    <option value="#">9</option>
+                                    <option value="#">10</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <div class="submit">
+                            <span><a href="#">쿠폰선택</a></span>
+                            <button><a href="#">항공권 조회</a></button>
+                        </div>
+                    </li>
+                    <ul class="tab_inner modal_wrapper">
+                        <li class="modal">
+                            <p>다구간 여정 선택을 위하여<br/> 항공권 예약 화면으로 이동하시겠습니까?</p>
+                            <button class="yes"><a href="#">확인</a></button>
+                            <button class="cancle"><a href="#">취소</a></button>
+                        </li>
+                    </ul>
+                </ul>
+                
+            
+            </section>
+            <section class="icon_menu">
+                <ul>
+                    <li><a href="#" class="icon1">예약조회</a></li>
+                    <li><a href="#" class="icon2">체크인</a></li>
+                    <li><a href="#" class="icon3">출도착조회</a></li>
+                </ul>
+            </section>
+            <section class="airlines clearfix">
+                <h2>인기노선 최저가</h2>
+             
+                <ul class="airlines_list clearfix">
+                    <li class="on">
+                        <a href="#">
+                            <img src="images/air_1.jpg" alt="제주" width="250" height="381" />
+                            <div class="air_text">
+                                <strong>서울/김포 - 제주</strong><br />
+                                <span class="way">일반석 편도</span><br>
+                                <span class="price">KRW<strong>16,200~</strong></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/air_2.jpg" alt="일본 도쿄/나리타" width="250" height="381" />
+                            <div class="air_text">
+                                <strong class="white">서울/인천 - 도쿄/나리타</strong><br />
+                                <span class="way white">일반석 편도</span><br>
+                                <span class="price white">KRW<strong>239,100~</strong></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/air_3.jpg" alt="미국 로스앤젤레스" width="250" height="381" />
+                            <div class="air_text">
+                                <strong class="white">서울/김포 - 로스앤젤레스</strong><br />
+                                <span class="way white">일반석 편도</span><br>
+                                <span class="price white">KRW<strong>854,400~</strong></span>
+                            </div>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="air_btn">
+                    <button class="left"><img src="images/button-left.svg" alt="왼쪽보기"/></button>
+                    <button class="right"><img src="images/button-right.svg" alt="오른쪽보기"/></button>
+                    </div>
+            </section>
+            <section class="event">
+                <h2>이벤트</h2>
+            
+                <ul class="event_list clearfix">
+                    <li class="on">
+                        <a href="#">
+                            <img src="images/event_1.jpg" alt="asiana like" width="324" height="209" />
+                            <div class="event_inner">
+                                <em>아시아나 라이크</em>
+                                <span>2021-05-01~2021-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/event_2.jpg" alt="아시아나 A380 무착륙 관광비행과 함께, 청정지역 호주를 만나보세요" width="324" height="209" />
+                            <div class="event_inner">
+                                <em>아시아나 A380 무착륙 관광비행 프로젝트 호주편</em>
+                                <span>2021-04-28~2021-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/event_3.jpg" alt="지금 온라인에서 항공권 구매하면 수하물 1+1" width="324" height="209" />
+                            <div class="event_inner">
+                                <em>지금 온라인에서 항공권 구매하면 수하물 1+1</em>
+                                <span>2021-04-28~2021-05-31</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="count clearfix">
+                <li><a href="#" class=on>1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                </ul>     
+                
+            </section>
+            <section class="notice">
+                <h2><img src="images/btn_notice.png" width="25" height="25" alt="공지사항" /></h2>
+                <ul class="notice_wrap clearfix">
+
+                <li class="notice_inner">
+                <a href="#"><p>국내선 발권 수수료 신설안내</p>
+                <span>2021-03-15</span></a>
+                </li>
+
+            <li class="notice_inner">
+            <a href="#"><p>[유류할증료] 2021년 06월 국내선 유류할증료 안내</p>
+            <span>2021-03-10</span></a>
+            </li>
+
+        <li class="notice_inner">
+        <a href="#"><p>[일반] 국제선 변경/취소 수수료 및 예약부도 위약금 규정 변경 안내</p>
+        <span>2021-03-15</span></a>
+        </li>
+
+    </ul>
+            </section>
+            <section class="ad">
+                <a href="#">
+                    <img src="images/ad.jpg" alt="투어&티켓 아시아나항공 웹사이트에서 항공권 예약 시 마이리얼트립 최대 10%할인!
+                                           myrealtrip" width="375" height="117" /></a>
+            </section>
+            <footer class="footer">
+                <ul class="footer_top">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">운송약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <div class="footer_inner">
+                    <p>사업자등록번호 : 104-81-17480<br />
+                        통신판매업 신고 : 강서 제 16-2822
+                    </p>
+                    <address>서버 위치 : 서울 강서구 오쇠동 아시아나IDT(주) 전산센터</address>
+                    <p>© ASIANA AIRLINES. All rights reserved.</p>
+                    <div class="app">
+                        <a href="#"><img src="images/btn_google.png" width="108" height="31" alt="get in on google play" /></a>
+                        <a href="#"><img src="images/btn_apple.png" width="108" height="31" alt="download on the app store" /></a>
+                    </div>
+                    <div class="footer_bt">
+                        <span><a href="#">PC버전</a></span>
+                        <span><a href="#">지점연락처</a></span>
+                    </div>
+                </div>
+                <a href="#wrapper" class="btn_top"><img src="images/btn_arrow.png" alt="최상위로이동" width="45" height="45" /></a>
+            </footer>
+
+        </div>
+    </div>
+</body></html>
